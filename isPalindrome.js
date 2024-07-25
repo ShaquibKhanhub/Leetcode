@@ -19,12 +19,12 @@
 // Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 let isPalindrome = function (x) {
-    let str = x.toString();
+  let str = x.toString();
 
-    let res = "";
+  let res = "";
 
-    for (let i = str.length - 1; i >= 0; i--) {
-        res += str[i];
-    }
-    return res === str;
+  for (let i = str.length - 1; i >= 0; i--) {
+    res += str[i];
+  }
+  return res === str;
 };

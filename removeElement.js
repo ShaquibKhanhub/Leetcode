@@ -8,11 +8,11 @@
 // Return k.
 
 var removeElement = function (nums, val) {
-  let k = 0;
-  for (let i = 0; i <= nums.length - 1; i++) {
-    if (nums[i] !== val) {
-      nums[k++] = nums[i];
+    let k = 0;
+    for (let i = 0; i <= nums.length - 1; i++) {
+        if (nums[i] !== val) {
+            nums[k++] = nums[i];
+        }
     }
-  }
-  return k;
+    return k;
 };

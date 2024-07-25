@@ -1,9 +1,6 @@
 // 9. Palindrome Number
 
-
 // Given an integer x, return true if x is a palindrome, and false otherwise.
-
- 
 
 // Example 1:
 
@@ -21,15 +18,13 @@
 // Output: false
 // Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
+let isPalindrome = function (x) {
+  let str = x.toString();
 
+  let res = "";
 
-let  isPalindrome = function(x) {
-    let str = x.toString();
-    
-    let res = ''
-    
-    for(let i=str.length-1;i>=0;i--){
-        res+=str[i]
-    }
- return   res===str 
+  for (let i = str.length - 1; i >= 0; i--) {
+    res += str[i];
+  }
+  return res === str;
 };
